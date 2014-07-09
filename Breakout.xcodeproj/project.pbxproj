@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2601BD551934E7E700B80C4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A8625A192E793E00AF09E8 /* Foundation.framework */; };
+		2601BD561934E7E700B80C4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A8625C192E793E00AF09E8 /* CoreGraphics.framework */; };
+		2601BD571934E7E700B80C4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A8625E192E793E00AF09E8 /* UIKit.framework */; };
+		2601BD711934E7E800B80C4C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A86279192E793E00AF09E8 /* XCTest.framework */; };
+		2601BD721934E7E800B80C4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A8625A192E793E00AF09E8 /* Foundation.framework */; };
+		2601BD731934E7E800B80C4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A8625E192E793E00AF09E8 /* UIKit.framework */; };
 		26A8625B192E793E00AF09E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A8625A192E793E00AF09E8 /* Foundation.framework */; };
 		26A8625D192E793E00AF09E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A8625C192E793E00AF09E8 /* CoreGraphics.framework */; };
 		26A8625F192E793E00AF09E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A8625E192E793E00AF09E8 /* UIKit.framework */; };
@@ -21,9 +27,18 @@
 		26A8627C192E793E00AF09E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A8625E192E793E00AF09E8 /* UIKit.framework */; };
 		26A86284192E793E00AF09E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26A86282192E793E00AF09E8 /* InfoPlist.strings */; };
 		26A86286192E793E00AF09E8 /* BreakoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A86285192E793E00AF09E8 /* BreakoutTests.m */; };
+		26A86291192E7A6400AF09E8 /* PaddleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A86290192E7A6400AF09E8 /* PaddleView.m */; };
+		26A86294192E806800AF09E8 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A86293192E806800AF09E8 /* BallView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2601BD741934E7E800B80C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26A8624F192E793E00AF09E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2601BD531934E7E700B80C4C;
+			remoteInfo = SuperheroPedia;
+		};
 		26A8627D192E793E00AF09E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 26A8624F192E793E00AF09E8 /* Project object */;
@@ -34,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2601BD541934E7E700B80C4C /* SuperheroPedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperheroPedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2601BD701934E7E800B80C4C /* SuperheroPediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperheroPediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A86257192E793E00AF09E8 /* Breakout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breakout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A8625A192E793E00AF09E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		26A8625C192E793E00AF09E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,9 +70,33 @@
 		26A86281192E793E00AF09E8 /* BreakoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BreakoutTests-Info.plist"; sourceTree = "<group>"; };
 		26A86283192E793E00AF09E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26A86285192E793E00AF09E8 /* BreakoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakoutTests.m; sourceTree = "<group>"; };
+		26A8628F192E7A6400AF09E8 /* PaddleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaddleView.h; sourceTree = "<group>"; };
+		26A86290192E7A6400AF09E8 /* PaddleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaddleView.m; sourceTree = "<group>"; };
+		26A86292192E806800AF09E8 /* BallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallView.h; sourceTree = "<group>"; };
+		26A86293192E806800AF09E8 /* BallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2601BD511934E7E700B80C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2601BD561934E7E700B80C4C /* CoreGraphics.framework in Frameworks */,
+				2601BD571934E7E700B80C4C /* UIKit.framework in Frameworks */,
+				2601BD551934E7E700B80C4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2601BD6D1934E7E800B80C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2601BD711934E7E800B80C4C /* XCTest.framework in Frameworks */,
+				2601BD731934E7E800B80C4C /* UIKit.framework in Frameworks */,
+				2601BD721934E7E800B80C4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26A86254192E793E00AF09E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,6 +135,8 @@
 			children = (
 				26A86257192E793E00AF09E8 /* Breakout.app */,
 				26A86278192E793E00AF09E8 /* BreakoutTests.xctest */,
+				2601BD541934E7E700B80C4C /* SuperheroPedia.app */,
+				2601BD701934E7E800B80C4C /* SuperheroPediaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,11 +155,15 @@
 		26A86260192E793E00AF09E8 /* Breakout */ = {
 			isa = PBXGroup;
 			children = (
+				26A8626C192E793E00AF09E8 /* Main.storyboard */,
 				26A86269192E793E00AF09E8 /* AppDelegate.h */,
 				26A8626A192E793E00AF09E8 /* AppDelegate.m */,
-				26A8626C192E793E00AF09E8 /* Main.storyboard */,
+				26A86292192E806800AF09E8 /* BallView.h */,
+				26A86293192E806800AF09E8 /* BallView.m */,
 				26A8626F192E793E00AF09E8 /* ViewController.h */,
 				26A86270192E793E00AF09E8 /* ViewController.m */,
+				26A8628F192E7A6400AF09E8 /* PaddleView.h */,
+				26A86290192E7A6400AF09E8 /* PaddleView.m */,
 				26A86272192E793E00AF09E8 /* Images.xcassets */,
 				26A86261192E793E00AF09E8 /* Supporting Files */,
 			);
@@ -155,6 +202,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2601BD531934E7E700B80C4C /* SuperheroPedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2601BD821934E7E800B80C4C /* Build configuration list for PBXNativeTarget "SuperheroPedia" */;
+			buildPhases = (
+				2601BD501934E7E700B80C4C /* Sources */,
+				2601BD511934E7E700B80C4C /* Frameworks */,
+				2601BD521934E7E700B80C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperheroPedia;
+			productName = SuperheroPedia;
+			productReference = 2601BD541934E7E700B80C4C /* SuperheroPedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2601BD6F1934E7E800B80C4C /* SuperheroPediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2601BD831934E7E800B80C4C /* Build configuration list for PBXNativeTarget "SuperheroPediaTests" */;
+			buildPhases = (
+				2601BD6C1934E7E800B80C4C /* Sources */,
+				2601BD6D1934E7E800B80C4C /* Frameworks */,
+				2601BD6E1934E7E800B80C4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2601BD751934E7E800B80C4C /* PBXTargetDependency */,
+			);
+			name = SuperheroPediaTests;
+			productName = SuperheroPediaTests;
+			productReference = 2601BD701934E7E800B80C4C /* SuperheroPediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		26A86256192E793E00AF09E8 /* Breakout */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26A86289192E793E00AF09E8 /* Build configuration list for PBXNativeTarget "Breakout" */;
@@ -199,6 +281,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Dan Rudolf";
 				TargetAttributes = {
+					2601BD6F1934E7E800B80C4C = {
+						TestTargetID = 26A86256192E793E00AF09E8;
+					};
 					26A86277192E793E00AF09E8 = {
 						TestTargetID = 26A86256192E793E00AF09E8;
 					};
@@ -219,11 +304,27 @@
 			targets = (
 				26A86256192E793E00AF09E8 /* Breakout */,
 				26A86277192E793E00AF09E8 /* BreakoutTests */,
+				2601BD531934E7E700B80C4C /* SuperheroPedia */,
+				2601BD6F1934E7E800B80C4C /* SuperheroPediaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2601BD521934E7E700B80C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2601BD6E1934E7E800B80C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26A86255192E793E00AF09E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,11 +346,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2601BD501934E7E700B80C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2601BD6C1934E7E800B80C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26A86253192E793E00AF09E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26A86291192E7A6400AF09E8 /* PaddleView.m in Sources */,
 				26A86271192E793E00AF09E8 /* ViewController.m in Sources */,
+				26A86294192E806800AF09E8 /* BallView.m in Sources */,
 				26A8626B192E793E00AF09E8 /* AppDelegate.m in Sources */,
 				26A86267192E793E00AF09E8 /* main.m in Sources */,
 			);
@@ -266,6 +383,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2601BD751934E7E800B80C4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2601BD531934E7E700B80C4C /* SuperheroPedia */;
+			targetProxy = 2601BD741934E7E800B80C4C /* PBXContainerItemProxy */;
+		};
 		26A8627E192E793E00AF09E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 26A86256192E793E00AF09E8 /* Breakout */;
@@ -301,6 +423,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2601BD7E1934E7E800B80C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperheroPedia/SuperheroPedia-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SuperheroPedia/SuperheroPedia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2601BD7F1934E7E800B80C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperheroPedia/SuperheroPedia-Prefix.pch";
+				INFOPLIST_FILE = "SuperheroPedia/SuperheroPedia-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2601BD801934E7E800B80C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Breakout.app/Breakout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperheroPedia/SuperheroPedia-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SuperheroPediaTests/SuperheroPediaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2601BD811934E7E800B80C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Breakout.app/Breakout";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperheroPedia/SuperheroPedia-Prefix.pch";
+				INFOPLIST_FILE = "SuperheroPediaTests/SuperheroPediaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		26A86287192E793E00AF09E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -440,6 +632,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2601BD821934E7E800B80C4C /* Build configuration list for PBXNativeTarget "SuperheroPedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2601BD7E1934E7E800B80C4C /* Debug */,
+				2601BD7F1934E7E800B80C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2601BD831934E7E800B80C4C /* Build configuration list for PBXNativeTarget "SuperheroPediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2601BD801934E7E800B80C4C /* Debug */,
+				2601BD811934E7E800B80C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		26A86252192E793E00AF09E8 /* Build configuration list for PBXProject "Breakout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -456,6 +666,7 @@
 				26A8628B192E793E00AF09E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26A8628C192E793E00AF09E8 /* Build configuration list for PBXNativeTarget "BreakoutTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +675,7 @@
 				26A8628E192E793E00AF09E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

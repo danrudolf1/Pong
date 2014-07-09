@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BallView.h
 //  Breakout
 //
 //  Created by dan rudolf on 5/22/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface BallView : UIView
 
 @end
