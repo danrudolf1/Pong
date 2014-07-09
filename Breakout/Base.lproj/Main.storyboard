@@ -16,33 +16,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XlR-fh-1TE" customClass="PaddleView">
-                                <rect key="frame" x="119" y="502" width="83" height="16"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJb-NR-nb3" customClass="BallView">
                                 <rect key="frame" x="155" y="239" width="10" height="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIh-zq-1ml">
+                                <rect key="frame" x="0.0" y="284" width="320" height="284"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XlR-fh-1TE" customClass="PaddleView">
+                                        <rect key="frame" x="118" y="229" width="85" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0Yx-jl-vSM" appends="YES" id="ja6-k6-2Fz"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VPI-AX-vea">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="285"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAo-qI-DgQ" customClass="PaddleView">
+                                        <rect key="frame" x="118" y="46" width="84" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="H7x-1r-NZW" appends="YES" id="qKK-gp-TVU"/>
+                                </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="NH5-t0-0FM" appends="YES" id="oRv-EJ-056"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="ballView" destination="tJb-NR-nb3" id="vgv-1I-GtP"/>
-                        <outlet property="paddleView" destination="XlR-fh-1TE" id="sxe-A5-gWX"/>
+                        <outlet property="paddleView1" destination="XlR-fh-1TE" id="Ir2-Vx-lUS"/>
+                        <outlet property="paddleView2" destination="QAo-qI-DgQ" id="ZwL-3p-zy0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="NH5-t0-0FM">
+                <panGestureRecognizer minimumNumberOfTouches="1" id="0Yx-jl-vSM" userLabel="PaddleOnePan">
                     <connections>
-                        <action selector="draggedPaddle:" destination="vXZ-lx-hvc" id="k7W-FU-6aK"/>
+                        <action selector="draggedPaddleOne:" destination="vXZ-lx-hvc" id="PhT-Cc-g9c"/>
+                        <outlet property="delegate" destination="VPI-AX-vea" id="bIq-cU-ef4"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="H7x-1r-NZW" userLabel="PaddleTwoPan">
+                    <connections>
+                        <action selector="draggedPaddleTwo:" destination="vXZ-lx-hvc" id="e6b-dM-Y3a"/>
+                        <outlet property="delegate" destination="CIh-zq-1ml" id="Qf7-rm-vye"/>
                     </connections>
                 </panGestureRecognizer>
             </objects>
